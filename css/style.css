@@ -226,6 +226,7 @@ a:hover{
 
 .service-section .container h2{
     font-size: 2.5rem;
+    font-weight: 500;
     color: var(--first-text-color);
     margin-top: 5rem;
     margin-bottom: 2rem;
