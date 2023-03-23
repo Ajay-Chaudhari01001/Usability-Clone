@@ -51,6 +51,7 @@ p{
 a{
     font-size: 1.3rem;
     font-weight: 400;
+    color: var(--first-text-color);
 }
 
 a:hover{
