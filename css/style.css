@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+
+/* ---------- ressets ------------ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* declare css variables */
+:root{
+    --first-text-color: #183b56;
+    --second-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-text-color: #1d69a3;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #E9E9E9; */
+}
+
+h1{
+    font-size: 3.8rem;
+    font-weight: 500;
+    color: var(--first-text-color);
+}
+h2{
+    font-size: 2.5rem;
+    color: var(--first-text-color);
+}
+h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--first-text-color);
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: var(--second-text-color);
+    line-height: 1.5rem;
+}
+
+a{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+a:hover{
+    color: var(--accent-color);
+    transition: .2s ease-out;
+}
+
+/* ------------- Resusabel Codes -------------- */
+.container {
+    max-width: 960px;
+    margin: auto;
+}
+
+.bold-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.btn {
+    background-color: var(--accent-color);
+    padding: .8rem 2rem;
+    font-weight: 500;
+    border-radius: .4rem;
+    box-shadow: 0 0 .2rem var(--second-text-color);
+    color: white !important;
+    transition: .2s ease-out;
+}
+
+.btn:hover{
+    background-color: var(--accent-text-color);
+}
+
+.btn2{
+    background-color: transparent;
+    padding: .8rem 2rem;
+    border-radius: .4rem;
+    font-weight: 500;
+    border: .2px solid var(--accent-text-color);
+
+}
+
+.btn2:hover{
+    color: var(--accent-color);
+    border: .3px solid var(--accent-color);
+}
+
+/* ------------ header section styling -------------- */
+
+.banner {
+    background-color: #D34087;
+    padding: 1.3rem 0px;
+    text-align: center;
+}
+
+.banner .banner-text{
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.header img {
+    width: 35%;
+}
+
+.header .logo p {
+    padding: .2rem 4rem;
+    background-color: var(--first-text-color);
+}
+
+.header .navbar{
+    width: 90rem;
+}
+
+.header .nvbar-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header .drop-down{
+    position: relative;
+    display: flex;
+}
+
+.drop-down .list{
+    display: none;
+    width: 14rem;
+    flex-direction: column;
+    gap: 1.7rem;
+    position: absolute;
+    top: 3rem;
+    left: -2rem;
+    padding: 1.5rem 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .2rem rgba(0,0,0,0.3);
+    transition: .2s ease-out;
+    background-color: white;
+}
+
+.drop-down-btn:hover + .list{
+    display: inline-flex;
+}
+
+
+/* ---------- main section styling ------------- */
+
+.main{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 7rem;
+}
+
+.main img {
+    width: 90%;
+}
+
+.main .left-side {
+    width: 58rem;
+}
+
+.main .left-side p{
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    line-height: 2.5rem;
+}
+
+.main .btn{
+    padding: 1.2rem 2.5rem;
+}
+
+ /* -------- compenies section styling ------------ */
+
+ .bold-text{
+    text-align: center;
+    font-weight: 500;
+    margin-top: 6rem;
+    margin-top: 2rem;
+    color: var(--first-text-color);
+ }
+ .compenies-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+ }
+
+ .compenies-logo div{
+    width: 10%;
+ }
+
+.compenies-logo .logo{
+    width: 100%;
+    height: 10%;
+}
+
+
+/* ----- service section start -------- */
+
+.service-section .container{
+    text-align: center;
+}
+
+.service-section .container h2{
+    font-size: 2.5rem;
+    color: var(--first-text-color);
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.service-section .container h3{
+    font-size: 1.7rem;
+    color: var(--first-text-color);
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.box .card {
+    width: 30%;
+    padding: 2rem;
+}
+
+.box .card img{
+    width: 17%;
+}
+
+.box .card p{
+    margin-top: 1.8rem;
+    margin-bottom: 2.3rem;
+    line-height: 2rem;
+}
+
+/* ------------------ testimonial section ------------------ */
+.testmonial1{
+    margin-top: 5rem;
+}
+
+.box-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.testmonial1 .left-side {
+    margin: auto;
+    width: 50%;
+}
+.testmonial1 .left-side img{
+    width: 100%;
+}
+
+.testmonial1 .right-side{
+    width: 40%;
+}
+
+.testmonial1 .right-side p{
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    line-height: 1.8rem;
+}
+
+.testmonial1 .right-side img{
+    width: 25%;
+}
+
+.testmonial1 .client {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.testmonial1 .client img{
+    width: 18%;
+}
+
+.testmonial1 .client div p{
+    margin: 0;
+}
+
+.testmonial1 .client div{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side .para{
+    padding: 1rem 0;
+    position: relative;
+}
+
+/* .right-side .para::before{
+    content: "";
+} */
+
+
+/* ------------ possibility section styling-------- */
+
+.possibility {
+    margin-top: 5rem;
+}
+
+.possibility .small-container{
+    text-align: center;
+}
+
+.possibility .small-container h3{
+    font-size: 3rem;
+    font-size: 600;
+    margin-bottom: 2rem;
+}
+
+/* --------------- examples section ---------- */
+
+.example-card{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.example-card .card{
+    position: relative;
+}
+
+.example-card .card-text{
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    color: white;
+    font-weight: 600;
+}
+
+.example-card .card:hover{
+    box-shadow: 0 .4rem .8rem rgba(0,0,0,0.5);
+}
+
+/* price section */
+.price {
+    margin-top: 5rem;
+    background-color: var(--first-text-color);
+    padding: 3rem 0;
+}
+
+.price .big-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.price .right-side{
+    position: relative;
+}
+.price .right-side img{
+    width: 80%;
+}
+
+.price .right-side .image2{
+    width: 40%;
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+}
+
+.right-side .price-item h2 {
+    font-size: 1.8rem;
+    color: var(--first-text-color);
+}
+.right-side .price-item h3{
+    font-weight: 600;
+    color: #A9BBD0;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+}
+
+.right-side .price-item h3 span{
+    font-size: 3rem;
+    color: var(--accent-color);
+}
+.right-side .price-item{
+    position: absolute;
+    top: 15rem;
+    left: 15rem;
+}
+
+.big-container .left-side {
+    width: 65%;
+}
+
+.big-container .left-side h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    width: 70%;
+}
+
+.big-container .left-side .plan-heading{
+    font-size: 1.8rem;
+}
+
+.big-container .left-side p{
+    margin-block: 2.5rem;
+    line-height: 2rem;
+}
+
+
+.big-container .list{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.big-container .list li{
+    color: white;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    list-style-type: disc;
+}
+
+/* ---- get testing ------- */
+
+.testing{
+    margin-top: 5rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.testing h3{
+    font-size: 3rem;
+}
+
+.testing p{
+    margin-block: 5rem;
+}
+
+.testing .btn{
+    padding: 1.3rem 2.5rem;
+}
+
+/* ---- footer section -------- */
+
+.footer{
+    margin-top: 5rem;
+    background-color: #D7DDE4;
+    padding: 4rem 0;
+}
+
+.footer h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about img{
+    width: 50%;
+}
+
+.item{
+    width: 40%;
+}
+
+.footer li{
+    margin-bottom: .8rem;
+}
+
+.footer a{
+    color: var(--second-text-color);
+    transition: .2s ease-out;
+}
+
+.footer a:hover{
+    color: var(--accent-color);
+}
+
+.sub-footer{
+    background-color: #A9BBD0;
+    padding: 1.8rem 0;
+}
+
+.care{
+    display: flex;
+    justify-content: center;
+    gap: 2.7rem;
+}
+
+.care .target{
+    margin-left: 9rem;
+}
+
+.sub-footer a{
+    color: var(--second-text-color);
+}
+.sub-footer a:hover{
+    color: var(--accent-color);
+}
